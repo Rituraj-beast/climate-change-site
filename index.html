@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Earth Rising — Climate Change Awareness</title>
+  <meta name="description"
+    content="Explore the impact of climate change with interactive charts, real-time CO2 data, and actionable energy tips. Understand global warming facts involved." />
+  <meta name="keywords"
+    content="climate change, global warming, CO2 chart, environmental awareness, energy saving tips, climate statistics" />
+  <meta name="author" content="Earth Rising" />
+  <meta name="google-site-verification" content="KOa9TZar7cuf6rBX9ARg4gdkyVrurGtMo2OuMCAhILw" />
+  <meta name="theme-color" content="#0b3a52" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Earth Rising — Climate Change Awareness" />
+  <meta property="og:description"
+    content="Visualizing the future of our planet. See data, gallery, and take action today." />
+
+  <link rel="icon"
+    href="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=96&h=96&q=80"
+    type="image/jpeg">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav">
+      <a class="logo" href="#">Earth Rising</a>
+      <button id="menuToggle" class="menu-toggle" aria-expanded="false" aria-controls="mainNav" aria-label="Open menu">
+        <svg width="22" height="14" viewBox="0 0 22 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1 1h20M1 7h20M1 13h20" stroke="#08304a" stroke-width="1.8" stroke-linecap="round" />
+        </svg>
+      </button>
+      <ul id="mainNav" class="nav-links" role="menu">
+        <li role="none"><a role="menuitem" href="#about">About</a></li>
+        <li role="none"><a role="menuitem" href="#simulations">Simulations</a></li>
+        <li role="none"><a role="menuitem" href="#impacts">Impacts</a></li>
+        <li role="none"><a role="menuitem" href="#solutions">Solutions</a></li>
+        <li role="none"><a role="menuitem" href="#gallery">Gallery</a></li>
+        <li role="none"><a role="menuitem" href="#action">Take Action</a></li>
+      </ul>
+      <button id="themeToggle" class="theme-toggle" aria-pressed="false" title="Toggle theme">
+        <span class="icon-sun" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="18" height="18">
+            <circle cx="12" cy="12" r="4" fill="#FFD166"></circle>
+          </svg>
+        </span>
+        <span class="icon-moon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="18" height="18">
+            <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" fill="#e6f6ff" />
+          </svg>
+        </span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <div id="main">
+      <section class="hero" id="home">
+        <div class="hero-bg" aria-hidden="true">
+          <svg class="wave" viewBox="0 0 1200 200" preserveAspectRatio="none">
+            <path d="M0,80 C150,200 350,0 600,80 C850,160 1050,40 1200,80 L1200 200 L0 200 Z"></path>
+          </svg>
+          <div class="particles" aria-hidden="true"></div>
+        </div>
+
+        <div class="hero-content">
+          <p class="eyebrow">Climate science • Policy • Action</p>
+          <h1>Earth Rising</h1>
+          <p class="lead">A concise, evidence-based resource to understand climate change and how to act.</p>
+          <div class="hero-cta">
+            <a class="btn primary landing-trigger" href="#about" data-route="about">Explore the Story</a>
+            <a class="btn ghost landing-trigger" href="#action" data-route="action">How to Help</a>
+          </div>
+          <p class="trust">Data sources: IPCC, NOAA, NASA — illustrative figures.</p>
+        </div>
+      </section>
+
+      <section class="stats" aria-label="Key climate stats">
+        <div class="container stats-grid">
+          <div class="stat-card">
+            <h3 class="stat-number" data-target="1.2">0</h3>
+            <p>°C warming since pre-industrial</p>
+          </div>
+          <div class="stat-card">
+            <h3 class="stat-number" data-target="415">0</h3>
+            <p>ppm CO₂ in atmosphere</p>
+          </div>
+          <div class="stat-card">
+            <h3 class="stat-number" data-target="70">0</h3>
+            <p>% of ice mass lost (regional)</p>
+          </div>
+          <div class="stat-card">
+            <h3 class="stat-number" data-target="100">0</h3>
+            <p>Projected coastal cities at risk (est)</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="content" id="about">
+        <div class="container two-col">
+          <div>
+            <h2>What is Climate Change?</h2>
+            <p>Climate change refers to long-term shifts in temperatures and weather patterns. Human-driven emissions of
+              greenhouse gases are the main driver of the rapid warming observed since the 20th century.</p>
+            <ul class="reasons">
+              <li class="fade-in">Fossil fuel burning</li>
+              <li class="fade-in delay-1">Deforestation</li>
+              <li class="fade-in delay-2">Industrial agriculture</li>
+              <li class="fade-in delay-3">Urbanization & transport</li>
+            </ul>
+            <div class="quick-facts">
+              <h3>Quick facts</h3>
+              <ul>
+                <li>Human activities increased atmospheric CO₂ by over 50% since 1750.</li>
+                <li>Recent years are the warmest in at least the last 125,000 years.</li>
+                <li>Mitigation and adaptation together reduce impacts and costs.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div>
+            <h2>Animated Trends</h2>
+            <div class="chart-wrap">
+              <div class="chart-controls" role="tablist" aria-label="Chart datasets">
+                <button class="chart-btn active" data-set="co2" role="tab" aria-selected="true">CO₂ (ppm)</button>
+                <button class="chart-btn" data-set="temp" role="tab" aria-selected="false">Global Temp (°C)</button>
+              </div>
+              <canvas id="co2Chart" width="600" height="300" aria-label="Animated CO2 chart"></canvas>
+              <div id="chartTooltip" class="chart-tooltip" role="status" aria-live="polite"></div>
+              <div id="chartAnnotation" class="chart-annotation" aria-hidden="true"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="simulations" id="simulations">
+        <div class="container">
+          <h2>Interactive Simulations</h2>
+          <p style="text-align:center;color:var(--muted);max-width:800px;margin:0 auto 3rem;font-size:1.1rem">Explore
+            the impact of climate change through interactive tools and visualizations</p>
+
+          <!-- Carbon Footprint Calculator -->
+          <div class="simulation-container">
+            <h3 style="font-size:2rem;margin-bottom:2rem;color:var(--ink)">🌍 Carbon Footprint Calculator</h3>
+            <div class="simulation-grid">
+              <div class="simulation-controls">
+                <div class="control-group">
+                  <label>
+                    Transportation (km/week)
+                    <span class="control-value" id="transportValue">100</span>
+                  </label>
+                  <input type="range" id="transport" min="0" max="500" value="100" step="10">
+                </div>
+                <div class="control-group">
+                  <label>
+                    Energy Usage (kWh/month)
+                    <span class="control-value" id="energyValue">300</span>
+                  </label>
+                  <input type="range" id="energy" min="0" max="1000" value="300" step="50">
+                </div>
+                <div class="control-group">
+                  <label>
+                    Meat Consumption (meals/week)
+                    <span class="control-value" id="meatValue">7</span>
+                  </label>
+                  <input type="range" id="meat" min="0" max="21" value="7" step="1">
+                </div>
+                <div class="control-group">
+                  <label>
+                    Waste Production (kg/week)
+                    <span class="control-value" id="wasteValue">10</span>
+                  </label>
+                  <input type="range" id="waste" min="0" max="50" value="10" step="5">
+                </div>
+              </div>
+              <div class="result-display">
+                <div style="font-size:1.2rem;color:var(--muted);margin-bottom:1rem">Your Annual Carbon Footprint</div>
+                <div class="result-number" id="carbonResult">5.2</div>
+                <div class="result-label">tons CO₂/year</div>
+                <div class="result-comparison" id="carbonComparison">
+                  <strong>Comparison:</strong> Global average is 4 tons/year. Your footprint is 30% above average.
+                </div>
+                <div style="margin-top:1.5rem">
+                  <div style="font-size:0.9rem;color:var(--muted);margin-bottom:0.5rem">Breakdown by Category</div>
+                  <div style="display:grid;gap:0.75rem">
+                    <div>
+                      <div style="display:flex;justify-content:space-between;font-size:0.9rem;margin-bottom:0.25rem">
+                        <span>Transport</span><span id="transportPercent">35%</span>
+                      </div>
+                      <div class="progress-bar">
+                        <div class="progress-fill" id="transportBar" style="width:35%"></div>
+                      </div>
+                    </div>
+                    <div>
+                      <div style="display:flex;justify-content:space-between;font-size:0.9rem;margin-bottom:0.25rem">
+                        <span>Energy</span><span id="energyPercent">40%</span>
+                      </div>
+                      <div class="progress-bar">
+                        <div class="progress-fill" id="energyBar" style="width:40%"></div>
+                      </div>
+                    </div>
+                    <div>
+                      <div style="display:flex;justify-content:space-between;font-size:0.9rem;margin-bottom:0.25rem">
+                        <span>Food</span><span id="meatPercent">20%</span>
+                      </div>
+                      <div class="progress-bar">
+                        <div class="progress-fill" id="meatBar" style="width:20%"></div>
+                      </div>
+                    </div>
+                    <div>
+                      <div style="display:flex;justify-content:space-between;font-size:0.9rem;margin-bottom:0.25rem">
+                        <span>Waste</span><span id="wastePercent">5%</span>
+                      </div>
+                      <div class="progress-bar">
+                        <div class="progress-fill" id="wasteBar" style="width:5%"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sea Level Rise Simulator -->
+          <div class="simulation-container">
+            <h3 style="font-size:2rem;margin-bottom:2rem;color:var(--ink)">🌊 Sea Level Rise Simulator</h3>
+            <div class="simulation-grid">
+              <div class="simulation-controls">
+                <div class="control-group">
+                  <label>
+                    Global Temperature Increase
+                    <span class="control-value" id="tempIncreaseValue">2.0°C</span>
+                  </label>
+                  <input type="range" id="tempIncrease" min="1.5" max="4" value="2" step="0.1">
+                </div>
+                <div
+                  style="margin-top:2rem;padding:1.5rem;background:var(--glass-bg);border-radius:var(--radius);border:1px solid var(--glass-border)">
+                  <h4 style="color:var(--ink);margin-bottom:1rem;font-size:1.2rem">Impact Summary</h4>
+                  <ul style="list-style:none;display:grid;gap:0.75rem;color:var(--muted)">
+                    <li style="display:flex;align-items:start;gap:0.5rem">
+                      <span style="color:#f5576c;font-size:1.2rem">⚠️</span>
+                      <span id="seaLevelImpact1">Coastal cities at high risk of flooding</span>
+                    </li>
+                    <li style="display:flex;align-items:start;gap:0.5rem">
+                      <span style="color:#f5576c;font-size:1.2rem">👥</span>
+                      <span id="seaLevelImpact2">Millions displaced from coastal areas</span>
+                    </li>
+                    <li style="display:flex;align-items:start;gap:0.5rem">
+                      <span style="color:#f5576c;font-size:1.2rem">🏝️</span>
+                      <span id="seaLevelImpact3">Island nations face existential threat</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="result-display">
+                <div style="font-size:1.2rem;color:var(--muted);margin-bottom:1rem">Projected Sea Level Rise by 2100
+                </div>
+                <div class="result-number" id="seaLevelResult">0.8</div>
+                <div class="result-label">meters</div>
+                <div style="margin-top:2rem">
+                  <canvas id="seaLevelCanvas" width="400" height="300" style="border-radius:var(--radius)"></canvas>
+                </div>
+                <div class="result-comparison" style="margin-top:1.5rem">
+                  <strong>Cities at Risk:</strong> Miami, Shanghai, Mumbai, Amsterdam, Bangkok, and many more coastal
+                  cities will experience significant flooding.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Temperature Impact Map -->
+          <div class="simulation-container">
+            <h3 style="font-size:2rem;margin-bottom:2rem;color:var(--ink)">🌡️ Temperature Impact Simulator</h3>
+            <div class="simulation-grid">
+              <div class="simulation-controls">
+                <div class="control-group">
+                  <label>
+                    Emission Scenario
+                    <span class="control-value" id="scenarioValue">Current Policies</span>
+                  </label>
+                  <input type="range" id="scenario" min="1" max="4" value="2" step="1">
+                </div>
+                <div
+                  style="margin-top:1.5rem;padding:1.5rem;background:var(--glass-bg);border-radius:var(--radius);border:1px solid var(--glass-border)">
+                  <h4 style="color:var(--ink);margin-bottom:1rem;font-size:1.1rem">Scenario Details</h4>
+                  <p id="scenarioDescription" style="color:var(--muted);line-height:1.6;font-size:0.95rem">
+                    Following current climate policies leads to approximately 2.7°C warming by 2100, causing severe
+                    impacts on ecosystems and human societies.
+                  </p>
+                </div>
+                <div style="margin-top:1.5rem">
+                  <h4 style="color:var(--ink);margin-bottom:1rem;font-size:1.1rem">Regional Impacts</h4>
+                  <div style="display:grid;gap:0.75rem">
+                    <div
+                      style="padding:1rem;background:var(--glass-bg);border-radius:var(--radius-sm);border:1px solid var(--glass-border)">
+                      <div style="font-weight:700;color:var(--ink);margin-bottom:0.25rem">Arctic</div>
+                      <div style="color:var(--muted);font-size:0.9rem" id="arcticImpact">+4.5°C - Rapid ice loss</div>
+                    </div>
+                    <div
+                      style="padding:1rem;background:var(--glass-bg);border-radius:var(--radius-sm);border:1px solid var(--glass-border)">
+                      <div style="font-weight:700;color:var(--ink);margin-bottom:0.25rem">Tropics</div>
+                      <div style="color:var(--muted);font-size:0.9rem" id="tropicsImpact">+2.0°C - Coral bleaching</div>
+                    </div>
+                    <div
+                      style="padding:1rem;background:var(--glass-bg);border-radius:var(--radius-sm);border:1px solid var(--glass-border)">
+                      <div style="font-weight:700;color:var(--ink);margin-bottom:0.25rem">Mid-Latitudes</div>
+                      <div style="color:var(--muted);font-size:0.9rem" id="midLatImpact">+2.5°C - Extreme weather</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="result-display">
+                <div style="font-size:1.2rem;color:var(--muted);margin-bottom:1rem">Global Temperature Rise by 2100
+                </div>
+                <div class="result-number" id="tempResult">2.7°C</div>
+                <div class="result-label">above pre-industrial levels</div>
+                <div style="margin-top:2rem">
+                  <canvas id="tempMapCanvas" width="400" height="300" style="border-radius:var(--radius)"></canvas>
+                </div>
+                <div class="result-comparison" style="margin-top:1.5rem">
+                  <strong>Key Impacts:</strong> Increased frequency of heatwaves, droughts, wildfires, and extreme
+                  precipitation events affecting billions of people worldwide.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Renewable Energy Comparison -->
+          <div class="simulation-container">
+            <h3 style="font-size:2rem;margin-bottom:2rem;color:var(--ink)">⚡ Renewable Energy Comparison</h3>
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2rem;margin-top:2rem">
+              <div class="card" style="text-align:center">
+                <div style="font-size:3rem;margin-bottom:1rem">☀️</div>
+                <h4 style="font-size:1.5rem;margin-bottom:1rem;color:var(--ink)">Solar Power</h4>
+                <div style="margin:1.5rem 0">
+                  <div
+                    style="font-size:2rem;font-weight:900;background:var(--gradient-sunset);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">
+                    $0.03</div>
+                  <div style="color:var(--muted);font-size:0.9rem">per kWh</div>
+                </div>
+                <div style="text-align:left;color:var(--muted);font-size:0.95rem;line-height:1.6">
+                  <p style="margin-bottom:0.5rem"><strong style="color:var(--ink)">CO₂:</strong> 0g/kWh</p>
+                  <p style="margin-bottom:0.5rem"><strong style="color:var(--ink)">Efficiency:</strong> 15-22%</p>
+                  <p><strong style="color:var(--ink)">Lifespan:</strong> 25-30 years</p>
+                </div>
+              </div>
+              <div class="card" style="text-align:center">
+                <div style="font-size:3rem;margin-bottom:1rem">💨</div>
+                <h4 style="font-size:1.5rem;margin-bottom:1rem;color:var(--ink)">Wind Power</h4>
+                <div style="margin:1.5rem 0">
+                  <div
+                    style="font-size:2rem;font-weight:900;background:var(--gradient-ocean);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">
+                    $0.04</div>
+                  <div style="color:var(--muted);font-size:0.9rem">per kWh</div>
+                </div>
+                <div style="text-align:left;color:var(--muted);font-size:0.95rem;line-height:1.6">
+                  <p style="margin-bottom:0.5rem"><strong style="color:var(--ink)">CO₂:</strong> 0g/kWh</p>
+                  <p style="margin-bottom:0.5rem"><strong style="color:var(--ink)">Efficiency:</strong> 35-45%</p>
+                  <p><strong style="color:var(--ink)">Lifespan:</strong> 20-25 years</p>
+                </div>
+              </div>
+              <div class="card" style="text-align:center">
+                <div style="font-size:3rem;margin-bottom:1rem">💧</div>
+                <h4 style="font-size:1.5rem;margin-bottom:1rem;color:var(--ink)">Hydro Power</h4>
+                <div style="margin:1.5rem 0">
+                  <div
+                    style="font-size:2rem;font-weight:900;background:var(--gradient-forest);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">
+                    $0.05</div>
+                  <div style="color:var(--muted);font-size:0.9rem">per kWh</div>
+                </div>
+                <div style="text-align:left;color:var(--muted);font-size:0.95rem;line-height:1.6">
+                  <p style="margin-bottom:0.5rem"><strong style="color:var(--ink)">CO₂:</strong> 0g/kWh</p>
+                  <p style="margin-bottom:0.5rem"><strong style="color:var(--ink)">Efficiency:</strong> 85-90%</p>
+                  <p><strong style="color:var(--ink)">Lifespan:</strong> 50-100 years</p>
+                </div>
+              </div>
+              <div class="card" style="text-align:center;border:2px solid rgba(245,87,108,0.3)">
+                <div style="font-size:3rem;margin-bottom:1rem">🏭</div>
+                <h4 style="font-size:1.5rem;margin-bottom:1rem;color:var(--ink)">Fossil Fuels</h4>
+                <div style="margin:1.5rem 0">
+                  <div
+                    style="font-size:2rem;font-weight:900;background:var(--gradient-secondary);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">
+                    $0.07</div>
+                  <div style="color:var(--muted);font-size:0.9rem">per kWh</div>
+                </div>
+                <div style="text-align:left;color:var(--muted);font-size:0.95rem;line-height:1.6">
+                  <p style="margin-bottom:0.5rem"><strong style="color:#f5576c">CO₂:</strong> <span
+                      style="color:#f5576c">820g/kWh</span></p>
+                  <p style="margin-bottom:0.5rem"><strong style="color:var(--ink)">Efficiency:</strong> 33-40%</p>
+                  <p><strong style="color:var(--ink)">Lifespan:</strong> 30-40 years</p>
+                </div>
+              </div>
+            </div>
+            <div
+              style="margin-top:3rem;padding:2rem;background:linear-gradient(135deg,rgba(67,233,123,0.1),rgba(56,249,215,0.1));border-radius:var(--radius-lg);border:1px solid rgba(67,233,123,0.3);text-align:center">
+              <h4 style="font-size:1.5rem;color:var(--ink);margin-bottom:1rem">💡 The Renewable Advantage</h4>
+              <p style="color:var(--muted);max-width:700px;margin:0 auto;line-height:1.7">
+                Renewable energy sources are now cheaper than fossil fuels in most regions, produce zero emissions
+                during operation, and create more jobs per dollar invested. The transition to 100% renewable energy is
+                both economically viable and environmentally essential.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="impacts" id="impacts">
+        <div class="container">
+          <h2>Impacts & Stories</h2>
+          <div class="cards">
+            <article class="card slide-up">
+              <h3>Heatwaves</h3>
+              <p>Longer, more intense heatwaves threaten health, crops, and infrastructure.</p>
+            </article>
+            <article class="card slide-up delay-1">
+              <h3>Sea Level Rise</h3>
+              <p>Coastal flooding and erosion displace communities and damage ecosystems.</p>
+            </article>
+            <article class="card slide-up delay-2">
+              <h3>Ecosystem Shifts</h3>
+              <p>Species migrate, and coral reefs bleach due to warming and acidification.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="solutions" id="solutions">
+        <div class="container">
+          <h2>Solutions & Innovations</h2>
+          <p style="text-align:center;color:var(--muted);max-width:800px;margin:0 auto 3rem;font-size:1.1rem">Discover
+            cutting-edge technologies and strategies combating climate change</p>
+
+          <div class="cards">
+            <article class="card slide-up">
+              <div style="font-size:2.5rem;margin-bottom:1rem">🌱</div>
+              <h3>Carbon Capture</h3>
+              <p>Direct Air Capture (DAC) technology removes CO₂ directly from the atmosphere. Companies like Climeworks
+                are scaling this technology to capture millions of tons annually.</p>
+              <div
+                style="margin-top:1.5rem;padding:1rem;background:var(--glass-bg);border-radius:var(--radius-sm);border:1px solid var(--glass-border)">
+                <div style="font-weight:700;color:var(--ink);margin-bottom:0.5rem">Current Capacity</div>
+                <div style="color:var(--muted);font-size:0.95rem">~10,000 tons CO₂/year globally</div>
+              </div>
+            </article>
+
+            <article class="card slide-up delay-1">
+              <div style="font-size:2.5rem;margin-bottom:1rem">🔋</div>
+              <h3>Energy Storage</h3>
+              <p>Advanced battery technology and grid-scale storage enable 24/7 renewable energy. Lithium-ion, flow
+                batteries, and hydrogen storage are revolutionizing the energy sector.</p>
+              <div
+                style="margin-top:1.5rem;padding:1rem;background:var(--glass-bg);border-radius:var(--radius-sm);border:1px solid var(--glass-border)">
+                <div style="font-weight:700;color:var(--ink);margin-bottom:0.5rem">Cost Reduction</div>
+                <div style="color:var(--muted);font-size:0.95rem">89% decrease since 2010</div>
+              </div>
+            </article>
+
+            <article class="card slide-up delay-2">
+              <div style="font-size:2.5rem;margin-bottom:1rem">🌳</div>
+              <h3>Reforestation</h3>
+              <p>Large-scale tree planting initiatives and forest restoration projects sequester carbon while restoring
+                biodiversity. Drone technology enables planting at unprecedented scales.</p>
+              <div
+                style="margin-top:1.5rem;padding:1rem;background:var(--glass-bg);border-radius:var(--radius-sm);border:1px solid var(--glass-border)">
+                <div style="font-weight:700;color:var(--ink);margin-bottom:0.5rem">Global Goal</div>
+                <div style="color:var(--muted);font-size:0.95rem">1 trillion trees by 2030</div>
+              </div>
+            </article>
+          </div>
+
+          <div style="margin-top:4rem">
+            <h3
+              style="font-size:2rem;text-align:center;margin-bottom:2rem;color:var(--ink);background:none;-webkit-text-fill-color:var(--ink)">
+              Emerging Technologies</h3>
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem">
+              <div
+                style="padding:2rem;background:var(--glass-bg);backdrop-filter:blur(20px);border-radius:var(--radius-lg);border:1px solid var(--glass-border)">
+                <div style="display:flex;align-items:center;gap:1rem;margin-bottom:1rem">
+                  <div style="font-size:2rem">🧪</div>
+                  <h4 style="font-size:1.3rem;color:var(--ink)">Green Hydrogen</h4>
+                </div>
+                <p style="color:var(--muted);line-height:1.6;margin-bottom:1rem">Produced using renewable electricity,
+                  green hydrogen can decarbonize heavy industry, shipping, and aviation.</p>
+                <div class="progress-bar" style="margin-top:1rem">
+                  <div class="progress-fill" style="width:35%"></div>
+                </div>
+                <div style="font-size:0.85rem;color:var(--muted);margin-top:0.5rem">Technology Readiness: 35%</div>
+              </div>
+
+              <div
+                style="padding:2rem;background:var(--glass-bg);backdrop-filter:blur(20px);border-radius:var(--radius-lg);border:1px solid var(--glass-border)">
+                <div style="display:flex;align-items:center;gap:1rem;margin-bottom:1rem">
+                  <div style="font-size:2rem">🏗️</div>
+                  <h4 style="font-size:1.3rem;color:var(--ink)">Sustainable Materials</h4>
+                </div>
+                <p style="color:var(--muted);line-height:1.6;margin-bottom:1rem">Bio-based plastics, carbon-negative
+                  concrete, and recycled materials reduce construction and manufacturing emissions.</p>
+                <div class="progress-bar" style="margin-top:1rem">
+                  <div class="progress-fill" style="width:55%"></div>
+                </div>
+                <div style="font-size:0.85rem;color:var(--muted);margin-top:0.5rem">Technology Readiness: 55%</div>
+              </div>
+
+              <div
+                style="padding:2rem;background:var(--glass-bg);backdrop-filter:blur(20px);border-radius:var(--radius-lg);border:1px solid var(--glass-border)">
+                <div style="display:flex;align-items:center;gap:1rem;margin-bottom:1rem">
+                  <div style="font-size:2rem">🚗</div>
+                  <h4 style="font-size:1.3rem;color:var(--ink)">Electric Mobility</h4>
+                </div>
+                <p style="color:var(--muted);line-height:1.6;margin-bottom:1rem">EVs, electric buses, and e-bikes are
+                  rapidly replacing fossil fuel vehicles, with costs reaching parity.</p>
+                <div class="progress-bar" style="margin-top:1rem">
+                  <div class="progress-fill" style="width:70%"></div>
+                </div>
+                <div style="font-size:0.85rem;color:var(--muted);margin-top:0.5rem">Technology Readiness: 70%</div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            style="margin-top:4rem;padding:3rem;background:linear-gradient(135deg,rgba(102,126,234,0.15),rgba(118,75,162,0.15));border-radius:var(--radius-lg);border:1px solid rgba(102,126,234,0.3);text-align:center">
+            <h3
+              style="font-size:2rem;color:var(--ink);margin-bottom:1.5rem;background:none;-webkit-text-fill-color:var(--ink)">
+              🎯 The Path Forward</h3>
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:2rem;margin-top:2rem">
+              <div>
+                <div
+                  style="font-size:2.5rem;font-weight:900;background:var(--gradient-ocean);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:0.5rem">
+                  100%</div>
+                <div style="color:var(--muted)">Renewable Energy Goal</div>
+              </div>
+              <div>
+                <div
+                  style="font-size:2.5rem;font-weight:900;background:var(--gradient-forest);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:0.5rem">
+                  2050</div>
+                <div style="color:var(--muted)">Net Zero Target</div>
+              </div>
+              <div>
+                <div
+                  style="font-size:2.5rem;font-weight:900;background:var(--gradient-sunset);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:0.5rem">
+                  $100T</div>
+                <div style="color:var(--muted)">Investment Needed</div>
+              </div>
+            </div>
+            <p style="color:var(--muted);max-width:700px;margin:2rem auto 0;line-height:1.7">
+              Achieving climate goals requires unprecedented global cooperation, technological innovation, and immediate
+              action. Every sector must transform, and every individual can contribute.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery" id="gallery">
+        <div class="container">
+          <h2>Gallery</h2>
+          <div class="grid">
+            <div class="gallery-item">
+              <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=800&q=60"
+                alt="Melting glacier">
+              <p class="caption">Rate of ice loss has accelerated globally, contributing to sea level rise.</p>
+            </div>
+            <div class="gallery-item">
+              <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=60"
+                alt="City and smog">
+              <p class="caption">Urban emissions and industrial pollutants contribute significantly to global warming.
+              </p>
+            </div>
+            <div class="gallery-item">
+              <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=800&q=60"
+                alt="Forest canopy">
+              <p class="caption">Forests act as vital carbon sinks, absorbing nearly one-third of fossil fuel emissions.
+              </p>
+            </div>
+            <div class="gallery-item">
+              <img src="https://images.unsplash.com/photo-1493558103817-58b2924bce98?auto=format&fit=crop&w=800&q=60"
+                alt="Coastline erosion">
+              <p class="caption">Rising seas and extreme weather events increasingly threaten coastal infrastructure.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="action" id="action">
+        <div class="container">
+          <h2>Take Action</h2>
+          <p>Simple steps add up — reduce energy use, choose low-carbon transport, eat less meat, support reforestation,
+            and vote for strong climate policies.</p>
+          <div class="actions">
+            <button class="btn" id="btnTips">Energy Tips</button>
+            <button class="btn" id="btnConsequences">Consequences</button>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Modals -->
+  <dialog id="modalTips" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>⚡ Energy Saving Tips</h3>
+        <button class="close-modal" aria-label="Close">×</button>
+      </div>
+      <ul class="modal-list">
+        <li><strong>Switch to LEDs:</strong> They use 75% less energy than incandescent lighting.</li>
+        <li><strong>Unplug Electronics:</strong> "Vampire power" drains energy even when devices are off.</li>
+        <li><strong>Cold Water Wash:</strong> 90% of washing machine energy goes to heating water.</li>
+        <li><strong>Smart Thermostat:</strong> Regulate heating/cooling automatically to save ~10% annually.</li>
+        <li><strong>Seal the Gaps:</strong> Weatherstrip windows and doors to stop drafts.</li>
+      </ul>
+    </div>
+  </dialog>
+
+  <dialog id="modalConsequences" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>⚠️ Future Consequences</h3>
+        <button class="close-modal" aria-label="Close">×</button>
+      </div>
+      <div class="modal-body">
+        <p>If warming exceeds 1.5°C, the risks increase significantly:</p>
+        <ul class="modal-list">
+          <li><strong>Extreme Weather:</strong> More frequent and severe hurricanes, droughts, and heatwaves.</li>
+          <li><strong>Biodiversity Loss:</strong> Up to 14% of species face very high risk of extinction.</li>
+          <li><strong>Water Scarcity:</strong> 2 billion people could face water stress.</li>
+          <li><strong>Food Security:</strong> Yields of maize, rice, and wheat will likely decline globally.</li>
+          <li><strong>Economic Impact:</strong> Global GDP could drop by 11-14% by 2050 if unchecked.</li>
+        </ul>
+      </div>
+    </div>
+  </dialog>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="creator-profile">
+        <div class="creator-info">
+          <p class="creator-name">Created by <strong>Rituraj Jaiswal</strong></p>
+          <p class="creator-title">Web Developer & Eco-Activist</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> Earth Rising — Built for awareness and action.</p>
+        <p class="small">Images: Unsplash. Charts and animations are illustrative.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
